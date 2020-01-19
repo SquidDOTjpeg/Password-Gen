@@ -13,8 +13,9 @@
 <body>
     <div class="container">
         <h1 class="header">Generator de Passwordos</h1>
-        <h3 class="output">Password</h3>
-        <form class="form" id="generatorForm">
+        <h3 class="output" id="passwordDisplay">Password</h3>
+        
+        <form class="form" id="passwordGeneratorForm">
             <div><label for="charNumber">Number of Characters</label></div>
 
             <input type="number" min="8" max="128" value="12" id="charNumber">
@@ -25,8 +26,8 @@
             <label for="useNumbers">Use Numbers</label>
             <input type="checkbox" name="Use Numbers" id="useNumbers">
 
-            <label for="useSpecialChars">Use Special Characters</label>
-            <input type="checkbox" name="Use Special Characters" id="useSpecialChars">
+            <label for="useSymbols">Use Symbols</label>
+            <input type="checkbox" name="Use Special Characters" id="useSymbols">
 
             <input type="submit" value="Generate Password" id="generatePasswordButton">
         </form>
